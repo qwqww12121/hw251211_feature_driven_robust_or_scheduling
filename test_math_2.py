@@ -1,6 +1,6 @@
 ### 只考虑手术室全部使用，没有预留空手术室的急诊的情况
-###我写错了，不用管，重新看论文__2025.11.19 23:04
-#author:ustc PB24331904 江志鸿
+###我写错了，不用管__2025.11.19 23:04
+#ustc
 
 import gurobipy as gp
 from gurobipy import GRB
@@ -83,7 +83,7 @@ def solve_robust_surgery_scheduling():
     #     9: {'TypeA': 0.2, 'TypeB': 0.5, 'TypeC': 0.3, 'DUMMY': 0.0},
     #     10: {'TypeA': 0.4, 'TypeB': 0.3, 'TypeC': 0.2, 'DUMMY': 0.1}
     # }
-    # # 归一化（可选，代码已自带，确保概率和为1）
+    # # 归一化
     # for j in emergency_patients:
     #     total_prob = sum(emergency_type_prob[j].values())
     #     if total_prob > 0:
@@ -241,4 +241,5 @@ def solve_robust_surgery_scheduling():
 
 
 if __name__ == "__main__":
+
     solve_robust_surgery_scheduling()

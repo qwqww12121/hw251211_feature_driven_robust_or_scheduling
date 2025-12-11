@@ -42,7 +42,7 @@ python or_plus.py
 ```
 
 **依赖环境**：
-- Python 3.x
+- Python 3.9.21
 - Gurobi 优化求解器
 - NumPy
 - Matplotlib

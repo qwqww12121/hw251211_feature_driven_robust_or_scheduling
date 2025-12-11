@@ -24,7 +24,7 @@ patient_types = {
 # 为每个病人随机指定一个类型
 patient_type = {}
 for i in range(num_patients):
-    # 简单写法：大部分是简单/中等，少数是困难
+    #大部分是简单/中等，少数是困难
     t = random.choices([0, 1, 2], weights=[0.5, 0.3, 0.2])[0]
     patient_type[i] = t
 
@@ -150,4 +150,5 @@ plt.ylabel("Average overtime (hours)")
 plt.title("Effect of T on average overtime")
 plt.grid(True)
 plt.show()
+
 
